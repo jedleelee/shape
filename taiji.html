@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+  <style>
+      body{
+        background-color: gray;
+        padding: 200px 0;
+      }
+      #taiji{
+        height:200px;
+        width: 200px;
+        border: 1px solid linear-gradient(to bottom, #050701 0%,#0a0a0a 50%,#f2f4f7 50%,#f2f4f7 100%);;
+        background: linear-gradient(to bottom, #050701 0%,#0a0a0a 50%,#f2f4f7 50%,#f2f4f7 100%);
+        border-radius: 50%;
+        position: relative;
+        animation: 2s rainbow infinite;
+        margin: 0 auto;
+          
+      }
+      @keyframes rainbow {
+        from {
+            transform: rotate(0deg);
+          }
+          
+
+          to {
+            transform: rotate(360deg);
+          }
+      }
+      #taiji::before{
+          content:'';
+          position: absolute;
+          left: 0;
+          top: 25%;
+          width: 24px;
+          height: 24px;
+          border: 38px solid white;
+          border-radius: 50%;
+          background: black;
+      }
+      #taiji::after{
+          content:'';
+          position: absolute;
+          left: 49%;
+          top: 25%;
+          width: 24px;
+          height: 24px;
+          border: 39px solid black;
+          border-radius: 50%;
+          background: white;
+      }
+      
+        
+  </style>
+</head>
+<body>
+  <div id="taiji"></div>
+  
+</body>
+</html>
